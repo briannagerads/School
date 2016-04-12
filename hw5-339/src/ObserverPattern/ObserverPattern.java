@@ -12,4 +12,12 @@ public class ObserverPattern {
 	 * with the new state.
 	 */
 	
+	public static void main(String[] args) {
+		Elevator elevator = new Elevator();
+		elevator.activate(new WeightSensor());
+		elevator.activate(new Buttons());
+		elevator.activate(new MotionSensor());
+		elevator.verifyMovement();
+	}
+	
 }
