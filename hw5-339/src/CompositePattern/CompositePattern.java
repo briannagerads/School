@@ -18,4 +18,21 @@ public class CompositePattern {
 	 * should then delegate the operation to their children.
 	 */
 	
+	
+	public static void main(String[] args) {
+		String course1 = "Embedded Systems";
+		Course ta1 = new TeachingAssistant("Bri", course1);
+		Course ta2 = new TeachingAssistant("David", course1);
+		Course instructor1 = new Instructor("Jones", course1);
+		instructor1.add(ta1);
+		instructor1.add(ta2);
+		
+		String course2 = "Object Oriented Learning";
+		Course ta3 = new TeachingAssistant("Miranda", course2);
+		Course LeadInstructor = new Instructor("Harrison", course2);
+		LeadInstructor.add(ta3);
+		LeadInstructor.add(instructor1);
+		LeadInstructor.print();
+	}
+	
 }

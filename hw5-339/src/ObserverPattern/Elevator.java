@@ -5,13 +5,16 @@ import java.util.List;
 
 public class Elevator {
 	private List<ElevatorListener> listeners = new ArrayList<ElevatorListener>();
-	private int state;
+	/**
+	 * Returns whether or not the elevator is moving
+	 */
+	private boolean state;
 	
-	public int getState() {
+	public boolean getState() {
 		return state;
 	}
 	
-	public void setState(int state) {
+	public void setState(boolean state) {
 		this.state = state;
 	}
 	

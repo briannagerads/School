@@ -1,0 +1,25 @@
+----------
+Name = Harrison
+Course = Object Oriented Learning
+Title = Instructor
+----------
+----------
+Name = Miranda
+Course = Object Oriented Learning
+Title = TeachingAssistant
+----------
+----------
+Name = Jones
+Course = Embedded Systems
+Title = Instructor
+----------
+----------
+Name = Bri
+Course = Embedded Systems
+Title = TeachingAssistant
+----------
+----------
+Name = David
+Course = Embedded Systems
+Title = TeachingAssistant
+----------
