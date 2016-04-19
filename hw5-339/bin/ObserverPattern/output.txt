@@ -1,1 +1,7 @@
-output here
+Weight Sensor: Activated
+Too much weight!
+Elevator is not moving!
+
+Elevator has been cleared!
+Buttons: Activated
+Elevator is moving!

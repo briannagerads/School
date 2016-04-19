@@ -14,9 +14,15 @@ public class ObserverPattern {
 	
 	public static void main(String[] args) {
 		Elevator elevator = new Elevator();
+		
 		elevator.activate(new WeightSensor());
 		elevator.activate(new Buttons());
-		elevator.activate(new MotionSensor());
+		elevator.verifyMovement();
+		
+		System.out.println();
+		elevator.clearElevator();
+		
+		elevator.activate(new Buttons());
 		elevator.verifyMovement();
 	}
 	

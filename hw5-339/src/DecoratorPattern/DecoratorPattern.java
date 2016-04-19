@@ -19,4 +19,12 @@ public class DecoratorPattern {
 	 * some way by the decorator.
 	 */
 	
+	public static void main(String[] args) {
+		Number calcNumber = new Instantiate(4);
+		calcNumber = new AdditionDecorator(4, 5);
+		calcNumber = new SubtractionDecorator(calcNumber.getValue(), 8);
+		calcNumber = new NegativeNumber(calcNumber.getValue());
+		calcNumber = new PositiveNumber(calcNumber.getValue());
+	}
+	
 }
